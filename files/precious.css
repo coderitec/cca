@@ -1,9 +1,12 @@
-.container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 400px);
-    gap: 1em;
-    position: relative;
+@media screen and (min-width: 700px){
+    
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 400px);
+        gap: 1em;
+        position: relative;
     top: 3em;
 }
 
@@ -61,4 +64,73 @@ nav a{
 
 nav a:hover{
     background-color: rgba(0, 255, 255, 0.839);
+}
+}
+
+@media screen and (min-width: 400px){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 1em;
+        position: relative;
+    top: 3em;
+}
+
+div{
+    /* width: 300px;
+    height: 300px; */
+    border: 10px ridge purple;
+    background-color: black;
+}
+
+div h2{
+    text-transform: uppercase;
+    font-size: 2.6em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em .2em;
+    color: transparent;
+    background: url(./images/fibre.jpg);
+    -webkit-background-clip: text; 
+}
+div h2:hover{
+    background: conic-gradient( purple 30%, yellow 30%, yellow 50%,
+    pink 50%, pink 70%, tomato 70%, tomato 85%, cyan 85%);
+    -webkit-background-clip: text;
+}
+
+img{
+    width: 16px;
+}
+
+.bi-alarm-fill:hover{
+    color: blue;
+}
+
+/* stytling nav */
+nav{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px ridge lightblue;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(240, 248, 255, 0.901);
+    z-index: 1;
+}
+nav a{
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 1em;
+}
+
+nav a:hover{
+    background-color: rgba(255, 77, 0, 0.839);
+}
 }
