@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my awesome web</title>
+</head>
+<body>
+
+   <p>my name is <span class="name"></span></p>
+   <p>i am <span class="age"></span></p>
+   <p>am i as old as mr francis: <span class="boole"></span></p>
+
+</body>
+<script>
+    let myName =  prompt('what is your name')
+    let age  = prompt('how old are you')
+    let olderTHanFranc = age >= 35
+
+    let p1 = document.querySelector('.name')
+    let p2 = document.querySelector('.age')
+    let p3 = document.querySelector('.boole')
+
+    p1.textContent = myName
+
+    p2.textContent = age
+
+    p3.textContent = olderTHanFranc
+</script>
+</html>

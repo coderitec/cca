@@ -1,0 +1,51 @@
+main{
+    position: relative;
+    top: 3em;
+}
+
+.food{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.food img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px double blue;
+}
+
+.food h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(2, 35% 65%);
+    background-color: rgba(157, 54, 205, 0.875);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: medium;
+}
+
+.header nav{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;
+}
