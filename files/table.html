@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>study menu</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        table th{
+            text-align: left;
+            text-transform: capitalize;
+        }
+        th, td{
+            border: 5px ridge violet;
+            padding: 1em 0.5em;
+        }
+        thead, tfoot{
+            background: repeating-linear-gradient(60deg, darkgreen 10%, blue 11%);
+            color: wheat;
+        }
+
+        tbody tr:nth-of-type(even){
+            background-color: chartreuse;
+        }
+        tbody tr:nth-of-type(odd){
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">le jour</th>
+                    <th scope="col">ce matin</th>
+                    <th scope="col">l'apres</th>
+                    <th scope="col">ce soir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>lundi</th>
+                    <td colspan="2">react</td>
+                    <!-- <td>react</td> -->
+                    <td>flask</td>
+                </tr>
+                <tr>
+                    <th>mardi</th>
+                    <td>project</td>
+                    <td>area 7</td>
+                    <td>catechesis</td>
+                </tr>
+                <tr>
+                    <th>mercredi</th>
+                    <td rowspan="2">12 rules for life</td>
+                    <td>react</td>
+                    <td>react redux</td>
+                </tr>
+                <tr>
+                    <th>jeudi</th>
+                    <!-- <td>12 rules for life</td> -->
+                    <td>redux</td>
+                    <td>catechesis</td>
+                </tr>
+                <tr>
+                    <th>vendredi</th>
+                    <td>python libraries</td>
+                    <td>react forms</td>
+                    <td>bible</td>
+                </tr>
+                <tr>
+                    <th>samedi</th>
+                    <td>mercatornet</td>
+                    <td>bbc articles</td>
+                    <td>games</td>
+                </tr>
+                <tr>
+                    <th>dimanche</th>
+                    <td>bible</td>
+                    <td>catechesis</td>
+                    <td>meditation</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">review every quarter</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
