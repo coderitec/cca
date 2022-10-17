@@ -70,7 +70,7 @@ nav a:hover{
     .container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 400px);
+        grid-template-rows:350px 350px 400px;
         gap: 1em;
         position: relative;
     top: 3em;
@@ -90,12 +90,10 @@ div h2{
     font-family: Arial, Helvetica, sans-serif;
     padding: 1em .2em;
     color: transparent;
-    background: url(./images/fibre.jpg);
-    -webkit-background-clip: text; 
 }
 div h2:hover{
     background: conic-gradient( purple 30%, yellow 30%, yellow 50%,
-    pink 50%, pink 70%, tomato 70%, tomato 85%, cyan 85%);
+    pink 50%, rgb(47, 31, 34) 70%, tomato 70%, tomato 85%, cyan 85%);
     -webkit-background-clip: text;
 }
 
@@ -131,5 +129,14 @@ nav a{
 nav a:hover{
     background-color: rgba(0, 255, 255, 0.839);
 }
+}
+
+footer{
+    background: black;
+    color: wheat;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    top: 3em;
 }
 
