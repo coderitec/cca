@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive boxes</title>
+    <style>
+        @media print{
+            div{
+                border: 10px solid black;
+                width: 300px;
+                height: 400px;
+                background-color: transparent;
+            }
+        }
+         @media screen and (min-width: 300px) {
+            
+            main{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(8, 150px);
+                grid-template-areas: "p1"
+                                     "p2"
+                                     "p3"
+                                     "p4"
+                                     "p5"
+                                     "p6"
+                                     "p7"
+                                     "p8"
+            }
+            div{
+                background:linear-gradient(60deg, purple 50%, fuchsia 50%);
+                border: 5px dashed green;
+        }
+        .p1{
+            grid-area: p1;
+        }
+        .p2{
+            grid-area: p2;
+        }
+        .p3{
+            grid-area: p3;
+        }
+        .p4{
+            grid-area: p4;
+        }
+        .p5{
+            grid-area: p5;
+        }
+        .p6{
+            grid-area: p6;
+        }
+        .p7{
+            grid-area: p7;
+        }
+        .p8{
+            grid-area: p8;
+        }
+    }
+         @media screen and (min-width: 500px) {
+            
+            main{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 200px);
+                grid-template-areas: "p1  p2"
+                                    "p4  p3"
+                                    "p6  p5"
+                                    "p8  p7";
+            }
+            div{
+                background: crimson;
+            border: 5px double blue;
+        }
+        .p1{
+            grid-area: p1;
+        }
+        .p2{
+            grid-area: p2;
+        }
+        .p3{
+            grid-area: p3;
+        }
+        .p4{
+            grid-area: p4;
+        }
+        .p5{
+            grid-area: p5;
+        }
+        .p6{
+            grid-area: p6;
+        }
+        .p7{
+            grid-area: p7;
+        }
+        .p8{
+            grid-area: p8;
+        }
+    }
+        @media screen and (min-width: 680px) {
+            
+            main{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(5, 200px);
+                grid-template-areas: "p1 p1 p1 p2"
+                "p1 p1 p1 p3"
+                "p4 p4 p5 p5"
+                "p6 p6 p7 p7"
+                "p8 p8 p8 p8";
+            }
+            div{
+            background: transparent;
+            border: 5px double blue;
+        }
+        .p1{
+            grid-area: p1;
+        }
+        .p2{
+            grid-area: p2;
+        }
+        .p3{
+            grid-area: p3;
+        }
+        .p4{
+            grid-area: p4;
+        }
+        .p5{
+            grid-area: p5;
+        }
+        .p6{
+            grid-area: p6;
+        }
+        .p7{
+            grid-area: p7;
+        }
+        .p8{
+            grid-area: p8;
+        }
+    }
+        </style>
+</head>
+<body>
+    <main>
+        <div class="p1"></div>
+        <div class="p2"></div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+        <div class="p5"></div>
+        <div class="p6"></div>
+        <div class="p7"></div>
+        <div class="p8"></div>
+    </main>
+</body>
+</html>
