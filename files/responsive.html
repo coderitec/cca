@@ -57,6 +57,13 @@
         .p8{
             grid-area: p8;
         }
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2em;
+            margin-top: 2em;
+        }
     }
          @media screen and (min-width: 500px) {
             
@@ -105,10 +112,10 @@
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: repeat(5, 200px);
                 grid-template-areas: "p1 p1 p1 p2"
-                "p1 p1 p1 p3"
-                "p4 p4 p5 p5"
-                "p6 p6 p7 p7"
-                "p8 p8 p8 p8";
+                                    "p1 p1 p1 p3"
+                                    "p4 p4 p5 p5"
+                                    "p6 p6 p7 p7"
+                                    "p8 p8 p8 p8";
             }
             div{
             background: transparent;
@@ -116,12 +123,27 @@
         }
         .p1{
             grid-area: p1;
-        }
+            color: transparent;
+            padding: 3em;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 2em;
+            background-image: url(../images/fibre.jpg);
+            -webkit-background-clip: text;
+             }
         .p2{
             grid-area: p2;
+            text-align: center;
+            text-transform: uppercase;
+            background: lightblue;
+            background-clip: content-box;
         }
         .p3{
             grid-area: p3;
+            color: transparent;
+            background: url(../images/protein.jpg);
+            background-size: cover;
+            -webkit-background-clip: text;
         }
         .p4{
             grid-area: p4;
@@ -143,14 +165,30 @@
 </head>
 <body>
     <main>
-        <div class="p1"></div>
-        <div class="p2"></div>
-        <div class="p3"></div>
-        <div class="p4"></div>
-        <div class="p5"></div>
-        <div class="p6"></div>
-        <div class="p7"></div>
-        <div class="p8"></div>
+        <div class="p1">
+            <h1>hi, this is franc</h1>
+        </div>
+        <div class="p2">
+            <h2>education background</h2>
+        </div>
+        <div class="p3">
+            <h2>projects</h2>
+        </div>
+        <div class="p4">
+            <h2>work experience</h2>
+        </div>
+        <div class="p5">
+            <h2>leisure</h2>
+        </div>
+        <div class="p6">
+            <h2>family and friends</h2>
+        </div>
+        <div class="p7">
+            <h2>religious belief</h2>
+        </div>
+        <div class="p8">
+            <h2>certifications</h2>
+        </div>
     </main>
 </body>
 </html>

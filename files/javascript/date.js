@@ -39,5 +39,5 @@ switch(new Date().getMonth()){
 }
 
 const para = document.getElementById('date')
-const date = `${month}, ${new Date().getFullYear()}`
+const date = `${new Date().getDate()} ${month}, ${new Date().getFullYear()}`
 para.textContent = date
