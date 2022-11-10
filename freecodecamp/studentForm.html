@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body{
+            background: url(https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000);
+            background-attachment: fixed;
+        }
+
+        form{
+            width: 80%;
+            margin: 0 auto;
+            padding: 1em;
+            color: white;
+            background-color: rgba(2, 2, 59, 0.939);
+        }
+
+        h1, p{
+            text-align: center;
+        }
+        p{
+            margin-top: -.7em;
+        }
+        
+        ul, ol{
+            list-style-type: none;
+        }
+
+        .pi label{
+            display: block;
+            margin-top: .5em;
+        }
+        .pi input, select{
+            width: 80%;
+            padding: .5em;
+        }
+
+        .msg label{
+            display: block;
+        }
+        button{
+            margin-left: 3em;
+            width: 90%;
+            line-height: 2;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="title">Student registration form</h1>
+
+        <p id="description">Please fill the following details</p>
+        <form id="survey-form">
+            <ul>
+                <li class="pi">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Franc Enemuo" required>
+                </li>
+                <li class="pi">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="francenemuo@gmail.com" required>
+                </li>
+                <li class="pi">
+                    <label for="number" id="number-label">Age(Optional)</label>
+                    <input type="number" name="number" id="number" placeholder="35" min="7" max="60">
+                </li>
+                <li class="pi">
+                    <label for="course">Course of interest</label>
+                    <select name="course" id="dropdown">
+                        <option value="ms">Microsoft Office</option>
+                        <option value="gd">Graphic Designs</option>
+                        <option value="wd">Web Development</option>
+                        <option value="ux">User Experience &amp; User Interface Design</option>
+                        <option value="da">Data Analyst</option>
+                    </select>
+                </li>
+
+                <li>
+                    <h3>Gender</h3>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male">
+
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                </li>
+            </ul>
+
+            <h3>Select your skill sets</h3>
+            <ol>
+                <li>
+                    <input type="checkbox" name="sk" id="html"  value="html">
+                    <label for="html">html</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="sk" id="css" " value="css">
+                    <label for="css">css</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="sk" id="js" value="js">
+                    <label for="js">JavaScript</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="sk" id="py" value="py">
+                    <label for="py">Python</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="sk" id="sql" value="sql">
+                    <label for="sql">SQL</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="sk" id="react" value="react">
+                    <label for="react">React</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="sk" id="node"  value="node">
+                    <label for="node">Nodejs</label>
+                </li>
+               <li class="msg">
+                <label for="msg">Other Information</label>
+                <textarea name="msg" id="msg" cols="60" rows="5"></textarea>
+               </li>
+            </ol>
+
+            <button id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

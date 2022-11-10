@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything colors in CSS</title>
+    <style>
+        @media screen and (min-width: 668px) {
+            
+            body{
+                display: flex;
+            gap: 1em;
+        }
+        nav{
+            min-height: 100vh;
+            position: fixed;
+            width: 27%;
+        }
+        nav header{
+            padding-bottom: 2em;
+            text-transform: uppercase;
+            padding-top: 2em;
+        }
+        nav a{
+            display: block;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 2em 0;
+            border-top: 3px solid black;
+        }
+        main{
+            font-size: 1.3rem;
+            position: relative;
+            width: 62%;
+            left: 20em;
+            margin-left: 3%;
+            line-height: 1.5;
+        }
+        main header{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            background-color: rgb(134, 131, 131);
+            color: wheat;
+        }
+    }
+
+    @media screen and (max-width: 667px) {
+            
+            body{
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+        }
+        nav{
+            min-height: 100vh;
+            position: relative;
+            width: 100%;
+        }
+        nav header{
+            padding-bottom: 1em;
+            text-transform: uppercase;
+            padding-top: 1em;
+        }
+        nav a{
+            display: block;
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 2em 0;
+            border-top: 2px solid wheat;
+        }
+        main{
+            font-size: 1.1rem;
+            position: relative;
+            width: 100%;
+            left: 0;
+            margin-left: 0;
+            line-height: 1.5;
+        }
+        main header{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 500;
+            background-color: rgb(134, 131, 131);
+            color: wheat;
+        }
+    }
+        </style>
+        </head>
+<body>
+    <nav id="navbar">
+        <header>Everything colors in CSS</header>
+        <a href="#fore_color" class="nav-link">fore color</a>
+
+        <a href="#background_color" class="nav-link">background color</a>
+
+        <a href="#gradient_color" class="nav-link">gradient color</a>
+
+        <a href="#using_hex_value" class="nav-link">using hex value</a>
+
+        <a href="#using_rgb_color" class="nav-link">using rgb color</a>
+
+        <a href="#filters" class="nav-link">filters</a>
+
+        <a href="#opacity" class="nav-link">opacity</a>
+
+
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="fore_color">
+            <header>fore color</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio earum adipisci nulla perspiciatis, corrupti vero! Porro facere corrupti perspiciatis cumque vitae, dolore optio deserunt, suscipit adipisci hic et! Maiores, doloremque?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus totam, repudiandae temporibus enim eveniet quo sint dicta dolorum unde reprehenderit veritatis qui est. Quam esse enim id nesciunt omnis ab?</p>
+        </section>
+        <section class="main-section" id="background_color">
+            <header>background color</header>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate fuga veniam praesentium perspiciatis est maiores enim temporibus nam aliquid libero, similique unde, commodi non autem vero rerum doloribus inventore necessitatibus!</span><span>Libero placeat accusantium fugiat asperiores totam sapiente 
+                itaque debitis quasi? Animi excepturi culpa eum et, quam architecto exercitationem corrupti molestias quas eveniet, vero labore asperiores dignissimos aspernatur, fuga natus nihil?</span></p>
+        </section>
+        <section class="main-section" id="gradient_color">
+            <header>gradient color</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ducimus molestias, fugit similique cumque veritatis animi aspernatur ipsam magnam consequatur enim voluptate vitae architecto sapiente corporis quidem asperiores esse natus.</p>
+            <ul>
+                <li><code>background: linear-gradient(30deg, blue, red);</code></li>
+                <li>id </li>
+                <li><code>background: linear-gradient(30deg, blue, red);</code></li>
+                <li>man</li>
+                <li><code>background: linear-gradient(30deg, blue, red);</code></li>
+            </ul>
+        </section>
+        <section class="main-section" id="using_hex_value">
+            <header>using hex value</header>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia similique earum non eius ut dolor minus, expedita eaque eligendi at numquam voluptates placeat, aliquam, beatae alias fugit nostrum necessitatibus reprehenderit!</p>
+            <p>Lorem ipsum dolor <code>background: linear-gradient(30deg, blue, red);</code> Beatae a, suscipit optio possimus obcaecati voluptas, atque quas ipsa tempora, iste omnis modi consequuntur. Ullam, expedita sed. Reiciendis ratione tenetur obcaecati.</p>
+        </section>
+        <section class="main-section" id="using_rgb_color">
+            <header>using rgb color</header>
+            <p>Lorem ipsum dolor sit amet, <code>background: linear-gradient(30deg, blue, red);</code> Qui cupiditate aliquid debitis corrupti eos nam nisi aut deserunt provident ad porro libero cumque, ducimus adipisci numquam iste voluptatem officiis voluptatum?</p>
+            <ol>
+                <li>i </li>
+                <li>am </li>
+                <li>here </li>
+                <li>in </li>
+                <li>class</li>
+            </ol>
+        </section>
+        <section class="main-section" id="filters">
+            <header>filters</header>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam unde amet consectetur asperiores, minima soluta rem exercitationem. Consequatur repudiandae, expedita atque sint earum ex fugiat necessitatibus exercitationem quam vel quisquam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio voluptate ab autem vel atque soluta dicta. Consectetur id, perferendis esse in, non autem reprehenderit quasi, cumque expedita odio nemo.</p>
+        </section>
+        <section class="main-section" id="opacity">
+            <header>opacity</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, cumque officia! Sint, perspiciatis adipisci, omnis labore ut harum optio nam alias aperiam sit neque autem? Illum eos adipisci officia architecto!</p>
+        </section>
+    </main>
+</body>
+</html>

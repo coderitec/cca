@@ -1,59 +1,338 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>working with grids</title>
-    <link rel="stylesheet" href="./files/precious.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-</head>
+    <title>Coderite Consult</title>
+    <style>
+        @media screen and (min-width: 541px) {
+            
+            #welcome-section{
+                position: relative;
+                top: 0;
+                right: 0;
+                left: 0;
+                background: url(./files/franc.jpg), linear-gradient(30deg, purple 35%, beige 35%);
+                background-repeat: no-repeat;
+                background-position: right;
+                height: 100vh;
+            }
+            
+            h1{
+                text-transform: uppercase;
+                padding-top: 40vh;
+                text-align: center;
+                font-family: 'Arial Narrow', sans-serif;
+                font-size: 3rem;
+            }
+            h1 span{
+            display: block;
+            font-size: 2em;
+            color: transparent;
+            background: radial-gradient(blue 30%, khaki 30%, khaki 45%, tomato 45%, tomato 70%, fuchsia 70%, fuchsia 85%);
+            -webkit-background-clip: text;
+        }
+        
+        #projects{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            height: 100vh;
+        }
+        
+        #projects h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Arial Narrow', sans-serif;
+         }
+         
+         #projects aside:last-of-type{
+             display: grid;
+             grid-template-columns: repeat(3, 1fr);
+             gap: 2em;
+            }
+            
+            
+            #projects a:first-of-type{
+                background: url(../files/form.png);
+            }
+            
+            #projects a:nth-of-type(2){
+                background: url(../files/tri.png);
+            }
+            
+            #projects a:last-of-type{
+                background: url(../files//menu.png);
+            }
+            #projects a{
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 0 30px;
+                height: 500px;
+                
+            }
+            
+            #projects a:hover{
+                box-shadow: 0 0 30px rgb(46, 45, 45);
+                
+            }
+            
+            #profile-link{
+                position: relative;
+                background-color: aqua;
+                height: 100vh;
+                padding: 7em 4em;
+                text-align: center;
+            }
+            
+            #profile-link a{
+                text-decoration: none;
+                font-size: 2em;
+            }
+            #profile-link aside:first-of-type{
+                font-size: 2.5em;
+            }
+            
+            #profile-link aside:last-of-type{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin-top: 5em;
+            }
+            
+            
+            footer{
+                border-top: 5px solid purple;
+                margin-top: 15em;
+                padding: 1em ;
+                font-size: 24px;
+            }
+            
+            nav{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: right;
+                background-color: rgba(255, 0, 255, 0.845);
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                left: 0;
+            }
+            nav a{
+                color: black;
+                padding: 1em;
+                text-decoration: none;
+                font-size: 24px;
+            }
+            nav a:hover{
+                background-color: blue;
+                color: white;
+            }
+        }
 
-<body>
-    <nav>
-        <a href="#">home</a>
-        <a href="./files/somto and states.html">about</a>
-        <a href="./files/famous.html">contact</a>
-        <a href="./files/amaka.html">projects</a>
-        <a href="./files/table.html">menu</a>
-    </nav>
-    <main class="container">
-        <div class="p1">
-            <h2>my name is franc</h2>
-        </div>
-        <div class="p2">
-            <h2>i am a full stack developer </h2>
-            <img src="./settings.svg" alt="franc setting">
-        </div>
-        <div class="p3">
-            <h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" fill="#ec8"/>
-              </svg>i love football and politics</h2>
-        </div>
-        <div class="p4">
-            <h2>i am an igbo man from anambra state</h2>
-        </div>
-        <div class="p5">
-            <h2> <i class="bi bi-person-heart"></i>i love and enjoy teaching </h2>
-        </div>
-        <div class="p6">
-            <h2><i class="bi bi-person-heart"></i>i am a catholic</h2>
-        </div>
-        <div class="p7">
-            <h2>when not eating, i enjoy writing codes</h2>
-        </div>
-        <div class="p8">
-            <h2>Find out about my tribute to <a href="./freecodecamp/tribute.html">my oracle</a></h2>
-        </div>
-        <div>
-            <h2>I hope to own a school one day</h2>
-        </div>
+        @media screen and (max-width: 540px) {
+            
+            #welcome-section{
+                position: relative;
+                top: 0;
+                right: 0;
+                left: 0;
+                background: url(../files/franc.jpg);
+                background-repeat: no-repeat;
+                background-position: right;
+                height: 100vh;
+            }
+            
+            h1{
+                text-transform: uppercase;
+                padding-top: 30vh;
+                text-align: center;
+                font-family: 'Arial Narrow', sans-serif;
+                font-size: 2em;
+            }
+            h1 span{
+            display: block;
+            font-size: 2em;
+            color: transparent;
+            background: conic-gradient(skyblue  30%, khaki 30%, khaki 50%, tomato 50%, tomato 75%, fuchsia 75%);
+            -webkit-background-clip: text;
+        }
+        
+        #projects{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            height: initial;
+        }
+        
+        #projects h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Arial Narrow', sans-serif;
+         }
+         
+         #projects aside:last-of-type{
+             display: grid;
+             grid-template-columns: repeat(1, 1fr);
+             gap: 1em;
+            }
+            
+            
+            #projects a:first-of-type{
+                background: url(../files/form.png);
+            }
+            
+            #projects a:nth-of-type(2){
+                background: url(../files/tri.png);
+            }
+            
+            #projects a:last-of-type{
+                background: url(../files//menu.png);
+            }
+            #projects a{
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 0 30px;
+                height: 500px;
+                
+            }
+            
+            #projects a:hover{
+                box-shadow: 0 0 30px rgb(46, 45, 45);
+                
+            }
+            
+            #profile-link{
+                position: relative;
+                background-color: aqua;
+                height: 100vh;
+                padding: 7em 4em;
+                text-align: center;
+            }
+            
+            #profile-link a{
+                text-decoration: none;
+                font-size: 2em;
+                padding-top: .5em;
+            }
+            #profile-link aside:first-of-type{
+                font-size: 2.5em;
+            }
+            
+            #profile-link aside:last-of-type{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-top: 5em;
+            }
+            
+            
+            footer{
+                border-top: 5px solid purple;
+                margin-top: 1.5em;
+                padding: 1em ;
+                font-size: 24px;
+            }
+            
+            nav{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: rgba(255, 0, 255, 0.845);
+                position: relative;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                left: 0;
+            }
+            nav a{
+                color: black;
+                padding: 1em;
+                text-decoration: none;
+                font-size: 24px;
+            }
+            nav a:hover{
+                background-color: blue;
+                color: white;
+            }
+        }
+        </style>
+        </head>
+        <body>
+            <main>
+                <nav id="navbar">
+                    <a href="#projects">Projects</a>
+                    <a href="#profile-link">Links</a>
+                    <a href="#footer">About</a>
+                    
+                    </nav>
+                    <section id="welcome-section">
+                        <h1>Hello there, <span>I am francis</span></h1>
+                        </section>
+                        <section id="projects">
+                            <aside>
+                                <h2>mes histoires</h2>
+                                </aside>
+                                <aside>
+                                    <a href="./freecodecamp/studentForm.html" target="_blank" title="student form design"  class="project-tile">
+                                        <article>
+                                            
+                                            </article>
+                                            </a>
+                                            <a href="./freecodecamp/tribute.html" target="_blank" title="my oracle page" class="project-tile">
+                                                <article>
+                                                    
+                                                    </article>
+                                                    </a>
+                                                    <a href="./files/table.html" target="_blank" title="reading timetable" class="project-tile">
+                                                        <article>
+                                                            
+                                                            </article>
+                                                            </a>
+                                                            </aside>
+                                                            </section>
+                                                            
+        <section id="profile-link">
+            <aside>
+                <h2>why not enroll in my classes...</h2>
+            </aside>
+            <aside>
+                <a href="http://linkedin.com/in/franc-enemuo" title="let's connect">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                      </svg> LinkedIn
+                </a>
+                <a href="https://twitter.com/Coderite_" title="follow me on twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      </svg> Twitter
+                </a>
+                <a href="https://www.youtube.com/channel/UCNXMbl7gbUAogj2Yc03I72w" title="subscribe and watch my videos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                      </svg> Youtube
+                </a>
+                <a href="tel:+2348100144840" title="call me here">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg> Call me 
+                </a>
+                <a href="mailto:code@coderiteconsult.com" title="send me a mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                        <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+                      </svg> Email
+                </a>
+            </aside>
+            <footer id="footer">
+                <p>All rights are reserved, the entire contents belong to Coderite  &copy;Coderite <span id="date"></span></p>
+            </footer>
+       
+        </section>
     </main>
-    <footer>
-        <p>&copy;Coderite <span id="date"></span></p>
-    </footer>
 </body>
 <script src="./files/javascript/date.js"></script>
 </html>
