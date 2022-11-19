@@ -28,11 +28,11 @@
                 font-family: 'Arial Narrow', sans-serif;
                 font-size: 3rem;
             }
-            h1 span{
+            h1 .name{
             display: block;
             font-size: 2em;
             color: transparent;
-            background: radial-gradient(blue 30%, khaki 30%, khaki 45%, tomato 45%, tomato 70%, fuchsia 70%, fuchsia 85%);
+            background: conic-gradient(blue 30%, khaki 30%, khaki 45%,  fuchsia 45%);
             -webkit-background-clip: text;
         }
         
@@ -154,11 +154,11 @@
                 font-family: 'Arial Narrow', sans-serif;
                 font-size: 2em;
             }
-            h1 span{
+            h1 .name{
             display: block;
             font-size: 2em;
             color: transparent;
-            background: conic-gradient(skyblue  30%, khaki 30%, khaki 50%, tomato 50%, tomato 75%, fuchsia 75%);
+            background: conic-gradient(skyblue  30%, khaki 30%, khaki 50%, fuchsia 50%);
             -webkit-background-clip: text;
         }
         
@@ -271,7 +271,7 @@
                     
                     </nav>
                     <section id="welcome-section">
-                        <h1>Hello there, <span>I am francis</span></h1>
+                        <h1>Hello there,<span class="greet"></span> <span class="name">I am francis</span></h1>
                         </section>
                         <section id="projects">
                             <aside>
@@ -336,4 +336,5 @@
     </main>
 </body>
 <script src="./files/javascript/date.js"></script>
+<script src="./files/javascript/greeting.js"></script>
 </html>
